@@ -1,6 +1,6 @@
 /* Preparation de données pour la démo : filtrer les tables villes et centres hospitaliers*/
 data casuser.villes;
-set CASUSER.VILLES_FRANCE;
+set CAFRANCE.VILLES;
 where upcase(COMPRESS(label)) in('BOURGENBRESSE','LAON','VICHY','DIGNE','NICE','PRIVAS','CHARLEVILLE-MÉZIÈES','FOIX','TROYES','CARCASSONNE','RODEZ','STRASBOURG','M
 ARSEILLE','CAEN','AURILLAC','ANGOULÊME','LAROCHELLE','BOURGES','BRIVE','AJACCIO','DIJON','SAINTBRIEUC','GUÉRET','NIORT','PÉRIGUEU
 X','BESANÇON','VALENCE','EVRY','EVREUX','CHARTRES','BREST','NÎMES','AUCH','BORDEAUX','COLMAR','BASTIA','TOULOUSE','LEPUY','CHAUMON
@@ -13,7 +13,7 @@ run;
 
 
 data CASUSER.CENTRES (keep=gid Nom_H adr_num adr_voie CP com_nom lat_coor1 long_coor1 num_dep); 
-	set CASUSER.CENTRES_H;
+	set CAFRANCE.CENTRES_H;
 	Nom_H=tranwrd(nom,'de Vaccination','Médical');
 	Nom_H=tranwrd(Nom_H,'de vaccination','Médical');
 	Nom_H=tranwrd(Nom_H,'vaccination','Médical');
@@ -33,4 +33,8 @@ AN','SAINTETIENNE','NANTES','BLOIS','ORLÉANS','CAHORS','AGEN','MENDE','ANGERS',
 ES','METZ','NEVERS','LILLE','BEAUVAIS','ALENÇON','PARIS','ARRAS','CLERMONT-FERRAND','PAU','PERPIGNAN','LYON','LYON','MACON','VESOUL
 ','LEMANS','SAVOIE','MELUN','ROUEN','BOBIGNY','AMIENS','ALBI','MONTAUBAN','BELFORT','PONTOISE','CRÉTEIL','TOULON','AVIGNON','LAROCH
 ESURYON','POITIERS','EPINAL','AUXERRE','VERSAILLES');
+run;
+
+data casuser.DIABETIC_DATA;
+set CAFRANCE.DIABETIC_DATA;
 run;
