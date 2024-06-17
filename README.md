@@ -42,5 +42,10 @@
 5. explication auto
 6. regression logistique
 
+## Add-in Microsoft
+Excel - données; code; va
+
+## SDK
+
 ## Modélisation
 Réadmission - target readmis
