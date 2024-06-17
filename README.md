@@ -23,11 +23,13 @@
 | Open Source             |  |     |    |
 
 ## Exploration
-1. Readmitted --> nouvelle catégorie
-2. encounter_id (id admission), patient_nbr --> catégorie + nouveau calcul (effectif sans doublon)
-3. ajouter gender
-4. Tableau croisé gender
+1. Readmitted --> graph
+2. encounter_id (id admission), patient_nbr --> catégorie + nouveau calcul (effectif sans doublon) remplacer dans le graph
+3. readmitted --> nouvelle catégorie
+4. patient_nb + effectif admission + Rang  10  
 5. Age par réadmis --> catégorie (regrouper 0-40)
+6. Matrice de correlation
+7. retour patient --> table simple -->time_in_hospital
 
 ## Préparation
 1. Code SAS9
@@ -37,8 +39,8 @@
 ## Visualisation géo
 1. Régions
 2. Carte géographique avec régions
-3. Hierarchie (Région-Ville)
-4. Diagnose
+3. intéraction
+4. (Hierarchie (Région-Ville) par réadmis)
 5. explication auto
 6. regression logistique
 
