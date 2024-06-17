@@ -1,5 +1,5 @@
 # Demo
-1. Import de données csv (connexion aux autres bases de données)
+1. Import de données csv (connexion aux autres bases de données, labels)
 2. Information Catalog
     - aperçu (info colonnes lignes)
 3. Exploration visuelle
@@ -24,7 +24,7 @@
 
 ## Exploration
 1. Readmitted --> nouvelle catégorie
-2. encounter_id, patient_nbr --> catégorie + nouveau calcul (effectif sans doublon)
+2. encounter_id (id admission), patient_nbr --> catégorie + nouveau calcul (effectif sans doublon)
 3. ajouter gender
 4. Tableau croisé gender
 5. Age par réadmis --> catégorie (regrouper 0-40)
@@ -37,8 +37,10 @@
 ## Visualisation géo
 1. Régions
 2. Carte géographique avec régions
-3. Hierarchie (?)
+3. Hierarchie (Région-Ville)
 4. Diagnose
 5. explication auto
-6. 
+6. regression logistique
+
 ## Modélisation
+Réadmission - target readmis
