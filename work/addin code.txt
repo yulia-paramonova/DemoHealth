@@ -1,0 +1,6 @@
+options cashost='sas-cas-server-shared-epic-client' casport=5570;
+cas mysession;
+libname cafrance cas caslib="cafrance";
+proc means data=cafrance.diabetic_data;
+    var time_in_hospital;
+run;
