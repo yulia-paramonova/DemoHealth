@@ -36,4 +36,9 @@
 
 ## Visualisation géo
 1. Régions
+2. Carte géographique avec régions
+3. Hierarchie (?)
+4. Diagnose
+5. explication auto
+6. 
 ## Modélisation
