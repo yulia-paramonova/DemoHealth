@@ -16,7 +16,7 @@
 | :---                    | :---        | :---          | :---          |
 | Import de données csv   | cafrance    |    |    |
 | Information Catalog     | diabetic_data |     |    |
-| Exploration visuelle    |  |     |    |
+| Exploration visuelle    | Exploration |     |    |
 | Préparation             | HLS_3_Flux_complet  |     |    |
 | Visualisation           |  |     |    |
 | Modélisation            | Réadmissions |     |    |
@@ -28,3 +28,12 @@
 3. ajouter gender
 4. Tableau croisé gender
 5. Age par réadmis --> catégorie (regrouper 0-40)
+
+## Préparation
+1. Code SAS9
+2. Flux
+3. code python dans le flux
+
+## Visualisation géo
+1. Régions
+## Modélisation
