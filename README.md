@@ -11,3 +11,20 @@
     - SDK
 6. Modélisation
 7. Open Source
+
+| Etape                   | Create.Demo | Zeus          | Engage          |
+| :---                    | :---        | :---          | :---          |
+| Import de données csv   | cafrance    |    |    |
+| Information Catalog     | diabetic_data |     |    |
+| Exploration visuelle    |  |     |    |
+| Préparation             | HLS_3_Flux_complet  |     |    |
+| Visualisation           |  |     |    |
+| Modélisation            | Réadmissions |     |    |
+| Open Source             |  |     |    |
+
+## Exploration
+1. Readmitted --> nouvelle catégorie
+2. encounter_id, patient_nbr --> catégorie + nouveau calcul (effectif sans doublon)
+3. ajouter gender
+4. Tableau croisé gender
+5. Age par réadmis --> catégorie (regrouper 0-40)
