@@ -19,7 +19,7 @@
 | Exploration visuelle    | Exploration | FRAYUP DemoHealth Exploration    |    |
 | Préparation             | HLS_3_Flux_complet  | HLS_3_Flux_complet    |    |
 | Visualisation           | Visualisation | FRAYUP DemoHealth Visualisation    |    |
-| Modélisation            | Réadmissions |     |    |
+| Modélisation            | Réadmissions | Réadmissions    |    |
 | Open Source             |  |     |    |
 
 ## Exploration
