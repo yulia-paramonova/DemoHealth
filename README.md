@@ -14,11 +14,11 @@
 
 | Etape                   | Create.Demo | Zeus          | Engage          |
 | :---                    | :---        | :---          | :---          |
-| Import de données csv   | cafrance    |    |    |
-| Information Catalog     | diabetic_data |     |    |
-| Exploration visuelle    | Exploration |     |    |
-| Préparation             | HLS_3_Flux_complet  |     |    |
-| Visualisation           |  |     |    |
+| Import de données csv   | cafrance    | public        |                |
+| Information Catalog     | diabetic_data | FRAYUP_DIABETIC_DATA    |    |
+| Exploration visuelle    | Exploration | FRAYUP DemoHealth Exploration    |    |
+| Préparation             | HLS_3_Flux_complet  | HLS_3_Flux_complet    |    |
+| Visualisation           | Visualisation | FRAYUP DemoHealth Visualisation    |    |
 | Modélisation            | Réadmissions |     |    |
 | Open Source             |  |     |    |
 
@@ -51,3 +51,7 @@ Excel - données; code; va
 
 ## Modélisation
 Réadmission - target readmis
+
+### Liens
+[Data description](https://www.kaggle.com/datasets/brandao/diabetes)
+[Notebook](https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/notebook#Data-Set-Description)
