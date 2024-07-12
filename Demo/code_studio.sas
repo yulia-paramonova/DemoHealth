@@ -18,17 +18,21 @@ proc cas;
 lib="casuser";
 tblnm="villes";
 *charger la table en mémoire;
-  table.loadTable / path=tblnm||".sashdat", caslib=lib, casout={caslib=lib, name=tblnm, replace=TRUE};
+	table.loadTable / path=tblnm||".sashdat", caslib=lib, casout={caslib=lib, name=tblnm, replace=TRUE};
 *sauvegarder la table "sur disque";
-		table.save / caslib=lib name=tblnm||".sashdat" table={name=tblnm, caslib=lib} replace=true;
+	table.save / caslib=lib name=tblnm||".sashdat" table={name=tblnm, caslib=lib} replace=true;
 *promouvoir la table;
-		table.promote / name=tblnm, caslib=lib, target=tblnm, targetLib=lib;
+	table.promote / name=tblnm, caslib=lib, target=tblnm, targetLib=lib;
 *delete source (sashdat);
-		table.deleteSource / caslib=lib source=tblnm||".sashdat" ;
+	table.deleteSource / caslib=lib source=tblnm||".sashdat" ;
 *drop la table de mémoire;
-		table.dropTable / caslib=lib, name=tblnm, quiet=TRUE;
-	table.tableInfo / caslib=lib;
-	table.fileInfo / caslib=lib;
+	table.dropTable / caslib=lib, name=tblnm, quiet=TRUE;
 quit;
 
+
+proc cas;
+lib="casuser";
+	table.fileInfo / caslib=lib; *to see data source files;
+	table.tableInfo / caslib=lib; *to see in-memory tables;
+quit;
 
