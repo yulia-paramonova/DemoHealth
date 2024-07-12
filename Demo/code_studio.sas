@@ -39,5 +39,10 @@ lib="casuser";
 	table.tableInfo / caslib=lib; *to see in-memory tables;
 quit;
 
-
+proc cas;
+lib="casuser";
+tblnm="EFFECTIFS";
+*delete source (sashdat);
+	table.deleteSource / caslib=lib source=tblnm||".sashdat" ;
+quit;
 
