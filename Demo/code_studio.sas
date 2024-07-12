@@ -1,3 +1,6 @@
+ *pour voir toutes les sessions actives;
+ cas _all_ list;
+
 *donnez le nom à votre session;
 cas yourSession sessopts=(caslib=casuser timeout=1800 locale="en_US");
 
@@ -35,4 +38,6 @@ lib="casuser";
 	table.fileInfo / caslib=lib; *to see data source files;
 	table.tableInfo / caslib=lib; *to see in-memory tables;
 quit;
+
+
 
